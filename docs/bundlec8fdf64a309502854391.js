@@ -201,10 +201,6 @@ span {
   line-height: 40px;
 }
 
-.foodName {
-  min-height: 80px;
-}
-
 .restaurant,
 .type {
   display: inline-block;
@@ -228,7 +224,7 @@ span {
 }
 .btn:focus {
   outline: 0;
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAMA;EACE,sBAAA;AAJF;;AAOA;EACE,yBATc;EAUd,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;EACA,SAAA;EACA,aAAA;AAJF;;AAOA;EACE,yBArBgB;EAsBhB,mBAAA;EACA,wEAtBW;EAuBX,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;AAJF;;AAOA;EACE,SAAA;EACA,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,cAAA;EACA,eAAA;EACA,gBAAA;AAJF;;AAOA;EACE,iBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,mBAAA;EACA,iBAAA;AAJF;;AAOA;EACE,gBAAA;AAJF;;AAOA;;EAEE,qBAAA;EACA,eAAA;AAJF;;AAOA;EACE,WAAA;EACA,mBAAA;EACA,yBAtEc;EAuEd,cAtEgB;EAuEhB,SAAA;EACA,mBAAA;EACA,uEAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;AAJF;AAME;EACE,sBAAA;AAJJ;AAOE;EACE,UAAA;AALJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #B19FF9; //#2fa8cc;\n$secondary-color: #f4f4f4;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: $primary-color;\n  font-family: 'Roboto', sans-serif;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  overflow: hidden;\n  margin: 0;\n  padding: 20px;\n}\n\n.container {\n  background-color: $secondary-color;\n  border-radius: 10px;\n  box-shadow: $box-shadow;\n  padding: 50px 20px;\n  text-align: center;\n  max-width: 100%;\n  width: 800px;\n}\n\nh3 {\n  margin: 0;\n  opacity: 0.5;\n  letter-spacing: 2px;\n}\n\nimg {\n  width: 200px;\n  margin-bottom: 20px;\n}\n\nspan {\n  display: block;\n  font-size: 14px;\n  max-height: 15px;\n}\n\n.foodText {\n  margin: 20px auto;\n  max-width: 600px;\n  font-size: 30px;\n  color: #e565ac;\n  letter-spacing: 1px;\n  line-height: 40px;\n}\n\n.foodName {\n  min-height: 80px;\n}\n\n.restaurant,\n.type {\n  display: inline-block;\n  font-size: 14px;\n}\n\n.btn {\n  width: 100%;\n  margin-bottom: 10px;\n  background-color: $primary-color;\n  color: $secondary-color;\n  border: 0;\n  border-radius: 10px;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n  padding: 14px 40px;\n  font-size: 16px;\n  cursor: pointer;\n\n  &:active {\n    transform: scale(0.98);\n  }\n\n  &:focus {\n    outline: 0;\n  }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAMA;EACE,sBAAA;AAJF;;AAOA;EACE,yBATc;EAUd,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;EACA,SAAA;EACA,aAAA;AAJF;;AAOA;EACE,yBArBgB;EAsBhB,mBAAA;EACA,wEAtBW;EAuBX,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;AAJF;;AAOA;EACE,SAAA;EACA,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,cAAA;EACA,eAAA;EACA,gBAAA;AAJF;;AAOA;EACE,iBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,mBAAA;EACA,iBAAA;AAJF;;AAOA;;EAEE,qBAAA;EACA,eAAA;AAJF;;AAOA;EACE,WAAA;EACA,mBAAA;EACA,yBAlEc;EAmEd,cAlEgB;EAmEhB,SAAA;EACA,mBAAA;EACA,uEAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;AAJF;AAME;EACE,sBAAA;AAJJ;AAOE;EACE,UAAA;AALJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #B19FF9; //#2fa8cc;\n$secondary-color: #f4f4f4;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: $primary-color;\n  font-family: 'Roboto', sans-serif;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  overflow: hidden;\n  margin: 0;\n  padding: 20px;\n}\n\n.container {\n  background-color: $secondary-color;\n  border-radius: 10px;\n  box-shadow: $box-shadow;\n  padding: 50px 20px;\n  text-align: center;\n  max-width: 100%;\n  width: 800px;\n}\n\nh3 {\n  margin: 0;\n  opacity: 0.5;\n  letter-spacing: 2px;\n}\n\nimg {\n  width: 200px;\n  margin-bottom: 20px;\n}\n\nspan {\n  display: block;\n  font-size: 14px;\n  max-height: 15px;\n}\n\n.foodText {\n  margin: 20px auto;\n  max-width: 600px;\n  font-size: 30px;\n  color: #e565ac;\n  letter-spacing: 1px;\n  line-height: 40px;\n}\n\n.restaurant,\n.type {\n  display: inline-block;\n  font-size: 14px;\n}\n\n.btn {\n  width: 100%;\n  margin-bottom: 10px;\n  background-color: $primary-color;\n  color: $secondary-color;\n  border: 0;\n  border-radius: 10px;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n  padding: 14px 40px;\n  font-size: 16px;\n  cursor: pointer;\n\n  &:active {\n    transform: scale(0.98);\n  }\n\n  &:focus {\n    outline: 0;\n  }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4038,4 +4034,4 @@ buttons.forEach(function (button) {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlea35b14bd1bda5fec7565.js.map
+//# sourceMappingURL=bundlec8fdf64a309502854391.js.map
