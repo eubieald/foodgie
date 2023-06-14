@@ -8,7 +8,7 @@ module.exports = {
         bundle: path.resolve(__dirname, 'src/index.js'), // entry point of our app with a filename called bundle
     },
     output: { //output of our npm run build to generate a bundle file
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: '[name][contenthash].js', // multiple entry naming setup, kung ano name sang entry point sa babaw
         clean: true, // prevent from stacking new generated entry files,
         assetModuleFilename: '[name][ext]', //asset dynamic filename
@@ -20,7 +20,7 @@ module.exports = {
     // setup devserver
     devServer: {
         static: {
-            directory: path.resolve(__dirname, 'dist')
+            directory: path.resolve(__dirname, 'docs')
         },
         port: 4000,
         open: true, //when npm run build is execute in terminal it will automatically open the app in the browser
