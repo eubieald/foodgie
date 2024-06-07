@@ -153,7 +153,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
 }
 
 body {
-  background-color: #B19FF9;
+  background-color: #b19ff9;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -207,10 +207,18 @@ span {
   font-size: 14px;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .btn {
   width: 100%;
+  max-width: 300px;
   margin-bottom: 10px;
-  background-color: #B19FF9;
+  background-color: #b19ff9;
   color: #f4f4f4;
   border: 0;
   border-radius: 10px;
@@ -224,7 +232,10 @@ span {
 }
 .btn:focus {
   outline: 0;
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAMA;EACE,sBAAA;AAJF;;AAOA;EACE,yBATc;EAUd,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;EACA,SAAA;EACA,aAAA;AAJF;;AAOA;EACE,yBArBgB;EAsBhB,mBAAA;EACA,wEAtBW;EAuBX,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;AAJF;;AAOA;EACE,SAAA;EACA,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,cAAA;EACA,eAAA;EACA,gBAAA;AAJF;;AAOA;EACE,iBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,mBAAA;EACA,iBAAA;AAJF;;AAOA;;EAEE,qBAAA;EACA,eAAA;AAJF;;AAOA;EACE,WAAA;EACA,mBAAA;EACA,yBAlEc;EAmEd,cAlEgB;EAmEhB,SAAA;EACA,mBAAA;EACA,uEAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;AAJF;AAME;EACE,sBAAA;AAJJ;AAOE;EACE,UAAA;AALJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #B19FF9; //#2fa8cc;\n$secondary-color: #f4f4f4;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: $primary-color;\n  font-family: 'Roboto', sans-serif;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  overflow: hidden;\n  margin: 0;\n  padding: 20px;\n}\n\n.container {\n  background-color: $secondary-color;\n  border-radius: 10px;\n  box-shadow: $box-shadow;\n  padding: 50px 20px;\n  text-align: center;\n  max-width: 100%;\n  width: 800px;\n}\n\nh3 {\n  margin: 0;\n  opacity: 0.5;\n  letter-spacing: 2px;\n}\n\nimg {\n  width: 200px;\n  margin-bottom: 20px;\n}\n\nspan {\n  display: block;\n  font-size: 14px;\n  max-height: 15px;\n}\n\n.foodText {\n  margin: 20px auto;\n  max-width: 600px;\n  font-size: 30px;\n  color: #e565ac;\n  letter-spacing: 1px;\n  line-height: 40px;\n}\n\n.restaurant,\n.type {\n  display: inline-block;\n  font-size: 14px;\n}\n\n.btn {\n  width: 100%;\n  margin-bottom: 10px;\n  background-color: $primary-color;\n  color: $secondary-color;\n  border: 0;\n  border-radius: 10px;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n  padding: 14px 40px;\n  font-size: 16px;\n  cursor: pointer;\n\n  &:active {\n    transform: scale(0.98);\n  }\n\n  &:focus {\n    outline: 0;\n  }\n}"],"sourceRoot":""}]);
+}
+.btn:hover {
+  background-color: #e565ac;
+}`, "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAMA;EACE,sBAAA;AAJF;;AAOA;EACE,yBATc;EAUd,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;EACA,SAAA;EACA,aAAA;AAJF;;AAOA;EACE,yBArBgB;EAsBhB,mBAAA;EACA,wEAtBW;EAuBX,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;AAJF;;AAOA;EACE,SAAA;EACA,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,YAAA;EACA,mBAAA;AAJF;;AAOA;EACE,cAAA;EACA,eAAA;EACA,gBAAA;AAJF;;AAOA;EACE,iBAAA;EACA,gBAAA;EACA,eAAA;EACA,cAAA;EACA,mBAAA;EACA,iBAAA;AAJF;;AAOA;;EAEE,qBAAA;EACA,eAAA;AAJF;;AAOA;EACE,aAAA;EACA,uBAAA;EACA,eAAA;EACA,SAAA;AAJF;;AAOA;EACE,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,yBA1Ec;EA2Ed,cA1EgB;EA2EhB,SAAA;EACA,mBAAA;EACA,uEAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;AAJF;AAME;EACE,sBAAA;AAJJ;AAOE;EACE,UAAA;AALJ;AAQE;EACE,yBAAA;AANJ","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\n\n$primary-color: #b19ff9; //#2fa8cc;\n$secondary-color: #f4f4f4;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: $primary-color;\n  font-family: \"Roboto\", sans-serif;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  overflow: hidden;\n  margin: 0;\n  padding: 20px;\n}\n\n.container {\n  background-color: $secondary-color;\n  border-radius: 10px;\n  box-shadow: $box-shadow;\n  padding: 50px 20px;\n  text-align: center;\n  max-width: 100%;\n  width: 800px;\n}\n\nh3 {\n  margin: 0;\n  opacity: 0.5;\n  letter-spacing: 2px;\n}\n\nimg {\n  width: 200px;\n  margin-bottom: 20px;\n}\n\nspan {\n  display: block;\n  font-size: 14px;\n  max-height: 15px;\n}\n\n.foodText {\n  margin: 20px auto;\n  max-width: 600px;\n  font-size: 30px;\n  color: #e565ac;\n  letter-spacing: 1px;\n  line-height: 40px;\n}\n\n.restaurant,\n.type {\n  display: inline-block;\n  font-size: 14px;\n}\n\n.buttons-container {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  gap: 20px;\n}\n\n.btn {\n  width: 100%;\n  max-width: 300px;\n  margin-bottom: 10px;\n  background-color: $primary-color;\n  color: $secondary-color;\n  border: 0;\n  border-radius: 10px;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n  padding: 14px 40px;\n  font-size: 16px;\n  cursor: pointer;\n\n  &:active {\n    transform: scale(0.98);\n  }\n\n  &:focus {\n    outline: 0;\n  }\n\n  &:hover {\n    background-color: #e565ac;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -671,13 +682,13 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/assets/jinhwan.jpeg":
+/***/ "./src/assets/herfave.jpeg":
 /*!*********************************!*\
-  !*** ./src/assets/jinhwan.jpeg ***!
+  !*** ./src/assets/herfave.jpeg ***!
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "jinhwan.jpeg";
+module.exports = __webpack_require__.p + "herfave.jpeg";
 
 /***/ }),
 
@@ -4018,15 +4029,15 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scripts_generateFood__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scripts/generateFood */ "./src/scripts/generateFood.js");
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
-/* harmony import */ var _assets_jinhwan_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/jinhwan.jpeg */ "./src/assets/jinhwan.jpeg");
+/* harmony import */ var _assets_herfave_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/herfave.jpeg */ "./src/assets/herfave.jpeg");
 
 
 
-var foodImg = document.getElementById('foodImg'),
-  buttons = document.querySelectorAll('.btn');
-foodImg.src = _assets_jinhwan_jpeg__WEBPACK_IMPORTED_MODULE_2__;
+var foodImg = document.getElementById("foodImg"),
+  buttons = document.querySelectorAll(".btn");
+foodImg.src = _assets_herfave_jpeg__WEBPACK_IMPORTED_MODULE_2__;
 buttons.forEach(function (button) {
-  button.addEventListener('click', function (event) {
+  button.addEventListener("click", function (event) {
     return (0,_scripts_generateFood__WEBPACK_IMPORTED_MODULE_0__["default"])(event.target);
   });
 });
@@ -4034,4 +4045,4 @@ buttons.forEach(function (button) {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlec8fdf64a309502854391.js.map
+//# sourceMappingURL=bundled5d0713484677813f96e.js.map
